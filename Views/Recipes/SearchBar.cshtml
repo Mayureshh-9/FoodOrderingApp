@@ -1,0 +1,85 @@
+
+<div class="shadow rounded p-3 mb-4">
+    <div class="container">
+        <form autocomplete="off" class="d-flex">
+            <!-- Search Input Field -->
+            <div class="input-group w-100 ui-widget">
+                <input type="text" id="tags" class="form-control" placeholder="Search Recipe" name="recipe" aria-label="Search Recipe" aria-describedby="search-button" />
+                
+                <!-- Search Button -->
+                <button type="submit" class="btn btn-success" id="search-button">
+                    <i class="bi bi-search"></i> Search
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+  <script>
+  $( function() {
+    var availableTags = [
+      [
+    "Mushrooms",
+    "Pizza",
+    "Burger",
+    "Pasta",
+    "Salad",
+    "Fried Chicken",
+    "Sushi",
+    "Tacos",
+    "Lasagna",
+    "Hot Dogs",
+    "Burritos",
+    "Fish and Chips",
+    "Curry",
+    "Steak",
+    "Fajitas",
+    "Pancakes",
+    "Omelette",
+    "Ramen",
+    "Gyros",
+    "Baguette",
+    "Quiche",
+    "Chicken Wings",
+    "Peking Duck",
+    "Ceviche",
+    "Waffles",
+    "Clam Chowder",
+    "Cheeseburger",
+    "Crispy Duck",
+    "Spring Rolls",
+    "Chow Mein",
+    "Moussaka",
+    "Bangers and Mash",
+    "Samosas",
+    "Paella",
+    "Pav Bhaji",
+    "Char Kway Teow",
+    "Fried Rice",
+    "Baklava",
+    "Crepes",
+    "Shawarma",
+    "Fried Plantains",
+    "Pavlova",
+    "Churros",
+    "Empanadas",
+    "Goulash",
+    "Tiramisu",
+    "Fettuccine Alfredo",
+    "Banh Mi",
+    "Risotto",
+    "Crispy Tofu",
+    "Fried Shrimp",
+    "Chicken Parmesan",
+    "Crab Cakes",
+    "Donuts",
+    "Maki Rolls"
+
+
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
